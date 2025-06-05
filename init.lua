@@ -640,6 +640,7 @@ require('lazy').setup({
             [vim.diagnostic.severity.HINT] = '󰌶 ',
           },
         } or {},
+        virtual_lines = true,
         virtual_text = {
           source = 'if_many',
           spacing = 2,
