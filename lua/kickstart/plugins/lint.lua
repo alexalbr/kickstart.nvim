@@ -9,7 +9,9 @@ return {
     local lint = require 'lint'
     lint.linters_by_ft = {
       markdown = { 'markdownlint' }, -- Make sure to install `markdownlint` via mason / npm
-    }
+    dockerfile = { 'hadolint' },
+        json = { 'jsonlint' },
+      }
 
     -- To allow other plugins to add linters to require('lint').linters_by_ft,
     -- instead set linters_by_ft like this:
